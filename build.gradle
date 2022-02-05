@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'az.et'
-version = '0.0.1'
+version = '1'
 sourceCompatibility = '11'
 
 repositories {
@@ -16,6 +16,9 @@ ext {
     set("springCloudVersion", "Hoxton.SR9")
 }
 
+jar {
+    baseName 'eureka-server'
+}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
