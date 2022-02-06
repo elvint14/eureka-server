@@ -1,0 +1,10 @@
+version: '3'
+services:
+  eureka-server:
+    container_name: eureka-server
+    image: auth-service
+    build:
+      context: eureka-server
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8761"
